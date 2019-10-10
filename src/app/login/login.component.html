@@ -1,0 +1,18 @@
+<mat-card>
+<form [formGroup]="loginForm">
+  <div class="example-container" >
+    <p>Login Form</p>
+    <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="email" formControlName="email">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Password" formControlName="password">
+        </mat-form-field>
+      </div>
+      </form>
+<button mat-button (click)="getLogin()"> Login </button>
+<button mat-button [routerLink]="['/register']"  > Register </button>
+</mat-card>

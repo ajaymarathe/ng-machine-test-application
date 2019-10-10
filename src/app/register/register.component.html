@@ -1,0 +1,21 @@
+
+<mat-card>
+    <form [formGroup]="registrationForm">
+      <div class="example-container">
+        <mat-form-field appearance="outline">
+            <mat-label>Name</mat-label>
+            <input matInput placeholder="Name" formControlName="name">
+          </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="email" formControlName="email">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input matInput placeholder="Password" formControlName="password">
+            </mat-form-field>
+          </div>
+          </form>
+    <button mat-button (click)="getRegister()"> Register </button>
+    </mat-card>

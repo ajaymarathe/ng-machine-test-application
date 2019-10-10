@@ -1,0 +1,37 @@
+<div class="form-container">
+<div class="header">
+Student Form
+</div>
+
+<form [formGroup]="StudentForm">
+  <div class="example-container">
+ <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="name" formControlName="name">
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="email" formControlName="email">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Phone No</mat-label>
+        <input matInput placeholder="phone no" formControlName="phone_no">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+          <mat-label>Location</mat-label>
+          <input matInput placeholder="location" formControlName="location" >
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>Collage Name</mat-label>
+            <input matInput placeholder="Collage Nmae" formControlName="college_name">
+          </mat-form-field>
+        </div>
+</form>
+<button class="button-bg" mat-stroked-button color="accent" (click)="deleteStudent()">DELETE</button>
+<button mat-stroked-button color="warn" (click)="saveStudent()">SAVE</button>
+
+</div>
