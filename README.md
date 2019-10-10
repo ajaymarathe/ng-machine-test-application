@@ -1,5 +1,7 @@
 # MachineTestApplication
 
+Hi there!!
+
 ## Usage
 ```js
 //clone the repository
